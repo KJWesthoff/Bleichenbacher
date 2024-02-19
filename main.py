@@ -116,7 +116,7 @@ def bleichenbacher(oracle: Oracle):
 
 
 if __name__ == "__main__":
-    secret = "Do not share this..AES key"
+    secret = "Do not share this..AES key!!"
     oracle = Oracle(secret)
     res = bleichenbacher(oracle), oracle.get_k()
     res_bytes = i2osp(res[0], res[1])
